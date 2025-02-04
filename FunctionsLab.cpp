@@ -24,10 +24,10 @@ return smallestValue;
 //     an int which is the starting index of search,
 //     an int which is the ending point of searchspace
 // function: Search in the array from given start to end index and replace the given target value with 1000
-void replaceVariable(int array[], int target) {
+void replaceVariable(int array[], int start, int end, int target) {
 	for(int i = start; i <= end; i++) {
 		if(array[i] == target) {
-			array[i] == 1000;
+			array[i] = 1000;
 		}
 	}
 }
@@ -37,7 +37,7 @@ void replaceVariable(int array[], int target) {
 //write a function called printArray to print out the elements of the given array
 //output: nothing
 //input: the array of integers and its size
-void printArray(array[], int size) {
+void printArray(int array[], int size) {
 	for(int i = 0; i < size; i++) {
 		cout << array[i] << " ";
 	}
