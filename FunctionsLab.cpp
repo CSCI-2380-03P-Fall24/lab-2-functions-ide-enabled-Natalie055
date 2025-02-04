@@ -24,13 +24,18 @@ return smallestValue;
 //     an int which is the starting index of search,
 //     an int which is the ending point of searchspace
 // function: Search in the array from given start to end index and replace the given target value with 1000
-void replaceVariable(int array[], int start, int end, int target) {
-	for(int i = start; i <= end; i++) {
-		if(array[i] == target) {
-			array[i] = 1000;
-		}
-	}
+void replaceVariable(int array1[], int target, int start1, int end1) {
+// loop over range ( start and end) 
+for ( int i = start1; i <= end1; i++){
+// check if value is target 
+if(array1[i] == target ){
+// set value == to 1000
+array1[i]=1000;
 }
+}
+return ; 
+}
+
 
 
 
